@@ -63,7 +63,7 @@
       "response": []
     },
     {
-      "name": "SubmitNoiseServiceRequest Copy",
+      "name": "SubmitNoiseServiceRequest",
       "event": [
         {
           "listen": "test",
