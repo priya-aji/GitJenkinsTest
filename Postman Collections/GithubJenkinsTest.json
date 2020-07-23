@@ -251,7 +251,23 @@
             "raw": {}
           }
         },
-        "url": "{{SRurl}}"
+        "url": {
+          "raw": "http://devappcore10/ServiceRequestConnectorService_Q1051M12IdoxTRAIN/ServiceRequestConnectorService.asmx?WSDL",
+          "protocol": "http",
+          "host": [
+            "devappcore10"
+          ],
+          "path": [
+            "ServiceRequestConnectorService_Q1051M12IdoxTRAIN",
+            "ServiceRequestConnectorService.asmx"
+          ],
+          "query": [
+            {
+              "key": "WSDL",
+              "value": null
+            }
+          ]
+        }
       },
       "response": []
     }
