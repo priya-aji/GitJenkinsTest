@@ -6,7 +6,7 @@
   },
   "item": [
     {
-      "name": "LogontoNoiseConnector Copy",
+      "name": "LogontoNoiseConnector",
       "event": [
         {
           "listen": "test",
