@@ -1,0 +1,66 @@
+{
+  "info": {
+    "_postman_id": "950169d8-778d-4257-ba28-e2eebab44561",
+    "name": "GithubJenkinsTest",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "LogontoNoiseConnector Copy",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "id": "1a85db99-4df3-48d3-941e-cdd79989fc29",
+            "exec": [
+              "//postman.setNextRequest(\"SubmitNoiseServiceRequest\");"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "_postman_id": "d0099370-7cc0-433b-accd-c0f77e9fd3c4",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "text/xml",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" \r\nxmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <soap:Body>\r\n    <LogonToConnector xmlns=\"http://www.caps-solutions.co.uk/webservices/connectors/75/servicerequest/service\">\r\n      <UniformLoginCredentials>\r\n        <DatabaseID>D-BASE_ID</DatabaseID>\r\n        <UniformUserName>train1</UniformUserName>\r\n        <UniformPassword></UniformPassword>\r\n      </UniformLoginCredentials>\r\n    </LogonToConnector>\r\n  </soap:Body>\r\n</soap:Envelope>",
+          "options": {
+            "raw": {
+              "language": "xml"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://devappcore10/ServiceRequestConnectorService_Q1051M12IdoxTRAIN/ServiceRequestConnectorService.asmx?WSDL",
+          "protocol": "http",
+          "host": [
+            "devappcore10"
+          ],
+          "path": [
+            "ServiceRequestConnectorService_Q1051M12IdoxTRAIN",
+            "ServiceRequestConnectorService.asmx"
+          ],
+          "query": [
+            {
+              "key": "WSDL",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
